@@ -1,0 +1,213 @@
+<div style="display: flex; justify-content: center">
+  <img
+    class="seller-img"
+    src="https://i.pinimg.com/originals/9a/ee/ce/9aeeceef9542e2a19d45bb472df4562c.png"
+  />
+
+  <ngb-carousel *ngIf="images" style="width: 800px">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          class="grocery-banner"
+          style="width: 800px; height: 300px"
+          [src]="images[0]"
+          alt="Random first slide"
+        />
+      </div>
+      <div class="carousel-caption">
+        <h3>Vegetables</h3>
+        <!-- <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> -->
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          class="grocery-banner"
+          style="width: 800px; height: 300px"
+          [src]="images[1]"
+          alt="Random second slide"
+        />
+      </div>
+      <div class="carousel-caption">
+        <h3>Fruits</h3>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          class="grocery-banner"
+          style="width: 800px; height: 300px"
+          [src]="images[2]"
+          alt="Random third slide"
+        />
+      </div>
+      <div class="carousel-caption">
+        <h3>Dairy</h3>
+        <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          class="grocery-banner"
+          style="width: 800px; height: 300px"
+          [src]="images[3]"
+          alt="Random fourth slide"
+        />
+      </div>
+      <div class="carousel-caption">
+        <h3>Cereals</h3>
+        <!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <img
+    class="seller-img2"
+    src="https://i.pinimg.com/originals/9a/ee/ce/9aeeceef9542e2a19d45bb472df4562c.png"
+  />
+</div>
+<!-- <span>Why Us</span> -->
+<div>
+  <div style="text-align: center; margin: 20px 0 5px 0">
+    <span style="font-size: 24px">Why Us</span>
+  </div>
+  <div style="display: flex; justify-content: center">
+    <div style="margin: 25px 15px; height: 50px">
+      <span
+        style="
+          border-radius: 25px;
+          padding: 15px;
+          font-size: 18px;
+          color: white;
+          background-color: tomato;
+        "
+        >Assured Delivery</span
+      >
+    </div>
+    <div style="margin: 25px 15px; height: 50px">
+      <span
+        style="
+          border-radius: 25px;
+          padding: 15px;
+          font-size: 18px;
+          color: white;
+          background-color: tomato;
+        "
+        >Safe Delivery</span
+      >
+    </div>
+    <div style="margin: 25px 15px; height: 50px">
+      <span
+        style="
+          border-radius: 25px;
+          padding: 15px;
+          font-size: 18px;
+          color: white;
+          background-color: tomato;
+        "
+        >Hygiene Assurance</span
+      >
+    </div>
+    <div style="margin: 25px 15px; height: 50px">
+      <span
+        style="
+          border-radius: 25px;
+          padding: 15px;
+          font-size: 18px;
+          color: white;
+          background-color: tomato;
+        "
+        >Customer Believe</span
+      >
+    </div>
+    <div style="margin: 25px 15px; height: 50px">
+      <span
+        style="
+          border-radius: 25px;
+          padding: 15px;
+          font-size: 18px;
+          color: white;
+          background-color: tomato;
+        "
+        >Deals Of The Week</span
+      >
+    </div>
+    <div style="margin: 25px 15px; height: 50px">
+      <span
+        style="
+          border-radius: 25px;
+          padding: 15px;
+          font-size: 18px;
+          color: white;
+          background-color: tomato;
+        "
+        >Precautionary Measures</span
+      >
+    </div>
+  </div>
+  <div>
+    <img
+      class="grocery-banner"
+      mat-card-image
+      src="https://th.bing.com/th/id/R.92dfa24d12c9166b4ff77e0a301080df?rik=Vpml89smWFjU%2bA&riu=http%3a%2f%2fwww.willstone-trade.com%2fwp-content%2fuploads%2f2015%2f12%2fimage_top.png&ehk=zHmrSl6okLrr58COJXx0JHJ1JRK%2fxcfs2B%2fcMtD%2fp1Q%3d&risl=&pid=ImgRaw&r=0"
+      alt="Photo of a vegetable"
+    />
+  </div>
+  <div style="text-align: center; margin: 20px 0 15px 0">
+    <span style="font-size: 24px">Category</span>
+  </div>
+  <div style="padding: 0 20px">
+    <mat-grid-list cols="4" rowHeight="2:1">
+      <div *ngFor="let category of categories">
+        <a routerLink="{{category.routerLink}}">
+          <mat-grid-tile>
+            <span class="product-name">{{ category.categoryName }}</span>
+            <img
+              style="width: 539px; height: 336px"
+              class="product-img"
+              mat-card-image
+              src="{{category.imageLink}}"
+              alt="Photo of a Dairy Product"
+            />
+          </mat-grid-tile>
+        </a>
+      </div>
+    </mat-grid-list>
+  </div>
+  <div style="text-align: center; margin-top: 20px">
+    <span style="font-size: 24px">Our Brand Store</span>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center">
+    <div style="border: 1px solid black; margin: 10px">
+      <img
+        style="width: 150px; height: 150px"
+        src="https://websmaniac.com/public/images/amul-min.png"
+      />
+    </div>
+    <div style="border: 1px solid black; margin: 10px">
+      <img
+        style="width: 150px; height: 150px"
+        src="https://th.bing.com/th/id/R.3390f0e9143375a772191926e61b4d89?rik=pTysaGMWNi6vgw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fcocacola_logo%2fcocacola_logo_PNG11.png&ehk=isvzo%2br05%2bxPX1wRHxTNAfKoQYt6sxrkT1uQ%2bbCMCuk%3d&risl=&pid=ImgRaw&r=0"
+      />
+    </div>
+    <div style="border: 1px solid black; margin: 10px">
+      <img
+        style="width: 150px; height: 150px"
+        src="https://th.bing.com/th/id/R.dd36b3dc04fa3fc991294bf4014f7be6?rik=9sIIYFttZOoNEA&riu=http%3a%2f%2fwww.ranklogos.com%2fwp-content%2fuploads%2f2012%2f04%2fLays_logo.png&ehk=bahgGCDrJx6F804VQDX6fnFcEkYI2DU9MSc7PNabLfw%3d&risl=&pid=ImgRaw&r=0"
+      />
+    </div>
+    <div style="border: 1px solid black; margin: 10px">
+      <img
+        style="width: 150px; height: 150px"
+        src="https://th.bing.com/th/id/OIP.-q06oJME5J1IAMoAWWN46gHaE8?pid=ImgDet&rs=1"
+      />
+    </div>
+    <div style="border: 1px solid black; margin: 10px">
+      <img
+        style="width: 150px; height: 150px"
+        src="https://cdn.freebiesupply.com/logos/large/2x/dr-oetker-logo-png-transparent.png"
+      />
+    </div>
+  </div>
+</div>

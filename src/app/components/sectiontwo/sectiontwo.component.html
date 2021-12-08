@@ -1,0 +1,24 @@
+<div style="display: flex; justify-content: space-around;"> 
+  <mat-card class="example-card" *ngFor="let grocery of grocery">
+    <mat-card-header class="product-title">
+      <mat-card-title>{{grocery.groceryName}}</mat-card-title>
+    </mat-card-header>
+    <img 
+    
+    style="width: 400px; height: 290px;"
+      mat-card-image
+      src="{{grocery.imageLink}}"
+      alt="Photo of a Rice"
+    />
+    <div>
+      <div style="display: flex; justify-content: space-between;">
+        <span class="rate"></span>
+        <span class="qnt"></span>
+        <span style="text-align: center;"> Brown rice is a whole grain rice with the inedible <br>outer hull removed. White rice is the same grain without <br>the hull, the bran layer, and the cereal germ.<br> Red rice, gold rice, and black rice are all whole rices <br>with differently pigmented outer layers</span>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <!-- <button mat-raised-button color="primary">Add To Cart</button> -->
+      </div>
+    </div>
+  </mat-card>
+</div>

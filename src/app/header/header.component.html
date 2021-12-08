@@ -1,0 +1,40 @@
+<p>
+    <mat-toolbar color="primary">
+      <img
+        style="width: 40px; height: 40px; margin-right: 5px"
+        src="https://cdn1.iconfinder.com/data/icons/supermarket-16/64/supermarket-grocery-store-food-512.png"
+        alt="icon-home"
+      />
+      <a style="text-decoration: none" routerLink="/"
+        ><span class="nav-name">Onine Grocery Shop</span></a>
+
+        <a style="text-decoration: none; margin-left: 15px;" routerLink="/products"
+        ><span class="nav-name">All Products</span></a>
+
+        <a style="text-decoration: none; margin-left: 15px;" routerLink="/dashboard"
+        ><span class="nav-name">Dashboard</span></a>
+
+      <span class="example-spacer"></span>
+      <a routerLink="/login" style="text-decoration: none" 
+      ><span *ngIf="!loggedIn" class="nav-name" style="margin-right: 15px;">Login/Sign Up</span>
+      <span *ngIf="loggedIn" class="nav-name" style="margin-right: 15px;">Logout</span>
+    </a>
+  
+      <!-- <a routerLink="/cart">
+        <span style="display: flex;align-items: center;">
+          <span class="nav-name" style="margin-right: 15px">Cart</span>
+          <img
+          style="width: 30px; height: 30px; margin-right: 5px"
+          src="https://th.bing.com/th/id/R.de4a62e2667a27333cd5f4e94256c712?rik=u7h2vidMygPQWw&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_287768.png&ehk=gjxmWBhI4ci6TZX2yh%2fwM82jFQk2HCYJIoYpsY9iEt0%3d&risl=&pid=ImgRaw&r=0"
+          alt="icon-home"
+        />
+        </span>
+      </a> -->
+      <button routerLink="cart" class="byn btn-primary" style="background:none;border: none;">
+        <i style="font-size: 30px;" class="fas fa-cart-plus"></i>
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+    </button>
+  
+    </mat-toolbar>
+  </p>
+  

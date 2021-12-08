@@ -1,0 +1,30 @@
+.form-control{
+    border-radius: 3px;
+    width: 600px;
+    margin-left:20px ;
+  
+  
+  }
+  .search-icon{
+  
+      position: absolute;
+      z-index: 10;
+      right: 43%;
+      top: 20px;
+      color: rgba(7, 10, 65, 0.877);
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  .nav-name:hover {
+    color: wheat;
+  }
+  .nav-name {
+    color: white;
+  }
+  .cart-fig {
+      position: relative;
+      font-size: 23px;
+  }
+  
+  

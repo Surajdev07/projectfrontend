@@ -1,0 +1,24 @@
+.example-card {
+  max-width: 400px;
+  margin: revert;
+}
+.example-header-image {
+  background-image: url('https://cdn.nanalyze.com/uploads/2017/06/Grocery-Technology-Teaser.jpg');
+  background-size: cover;
+}
+.qnt{
+    margin: 5px;
+}
+.btn-main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+}
+.product-title{
+  justify-content: center;
+}
+.rate, .qnt{
+  color: #333;
+  font-weight: 500;
+}

@@ -1,0 +1,30 @@
+<div style="display: flex; justify-content: space-around">
+  <mat-card class="example-card" *ngFor="let grocery of grocery">
+    <mat-card-header class="product-title">
+      <mat-card-title >{{
+        grocery.groceryName
+      }}</mat-card-title>
+    </mat-card-header>
+    <img
+      
+      style="width: 400px; height: 290px"
+      mat-card-image
+      src="{{grocery.imageLink}}"
+      alt="Photo of a Milk"
+    />
+    <div >
+      <div style="display: flex; justify-content: space-between">
+        <span class="rate"></span>
+        <span class="qnt"></span>
+        <span style="text-align: center"
+          >Milk is a nutrient-rich liquid food produced by the mammary glands of
+          mammals. It is the primary source of nutrition for young mammals,
+          including breastfed human infants before they are able to digest.</span
+        >
+      </div>
+      <div style="display: flex; justify-content: center">
+        <!-- <button mat-raised-button color="primary">Add To Cart</button> -->
+      </div>
+    </div>
+  </mat-card>
+</div>

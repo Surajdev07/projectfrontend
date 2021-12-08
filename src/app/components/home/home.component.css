@@ -1,0 +1,65 @@
+.grocery-banner{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+.product-name {
+  position: absolute;
+  font-size: 32px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.5);
+}
+.product-img {
+  opacity: 50%;
+  width: 80%;
+}
+.product-img:hover{
+  opacity: 100%;
+  transform: scale(1);
+  transition: transform 1s;
+}
+.seller-img{
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  height: 300px;
+  width: 200px;
+}
+.seller-img2{
+  position: absolute;
+  top: 80px;
+  right: 30px;
+  height: 300px;
+  width: 200px;
+}
+
+span{
+  color: #666666;
+  font-weight: 500;
+}
+
+.seller-img2 {
+  animation: oscil1 5s infinite; 
+}
+
+.seller-img {
+  animation: oscil2 5s infinite; 
+}
+
+
+@keyframes oscil1 {
+ from {transform: rotate(0deg); animation-timing-function: cubic-bezier(0.1, 0.3, 0.3, 1);}
+ 25% {transform: rotate(5deg); animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);}
+ 50% {transform: rotate(0deg); animation-timing-function: cubic-bezier(0.1, 0.3, 0.3, 1);}
+ 75% {transform: rotate(-5deg); animation-timing-function: cubic-bezier(0.7, 0.0, 0.9, 0.7);}
+ to {transform: rotate(0deg);}
+}
+
+@keyframes oscil2 {
+ from {transform: rotate(0deg); animation-timing-function: ease-out;}
+ 25% {transform: rotate(5deg); animation-timing-function: ease-in;}
+ 50% {transform: rotate(0deg); animation-timing-function: ease-out;}
+ 75% {transform: rotate(-5deg); animation-timing-function: ease-in;}
+ to {transform: rotate(0deg);}
+}

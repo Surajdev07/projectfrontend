@@ -1,0 +1,25 @@
+
+
+<div style="display: flex; justify-content: center; margin: 10px" *ngFor="let orderreceipt of orderreceipt">
+  <mat-card class="example-card" style="width: 450px">
+    <mat-card-header style="justify-content: center">
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Order Receipt</mat-card-title>
+      <!-- <mat-card-subtitle>Contact Please</mat-card-subtitle> -->
+    </mat-card-header>
+    <img
+      mat-card-image
+      src="https://g.foolcdn.com/editorial/images/160552/grocery-bag-full-of-fresh-produce.jpg"
+      alt="Photo of a Shiba Inu"
+    />
+    <mat-card-content class="orderreceipt">
+      <!-- <p>{{ orderreceipt.orderId }}</p> -->
+      <p><span>Delivery Address</span>  - {{ orderreceipt.deliveryAddress }}</p>
+      <p><span>Grocery Name</span> - {{ orderreceipt.groceryIdentifier }}</p>
+      <p><span>Order Date</span> - {{ orderreceipt.orderDate }}</p>
+      <p><span>Order Details</span> - {{ orderreceipt.orderDetails }}</p>
+      <p><span>Order Price</span> - {{ orderreceipt.orderPrice }}</p>
+      <p><span>Payment Method</span> - {{ orderreceipt.paymentMethod }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

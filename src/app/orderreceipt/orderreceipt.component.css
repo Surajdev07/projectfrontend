@@ -1,0 +1,7 @@
+.orderreceipt > p{
+    text-align: left;
+    color: brown;
+}
+.orderreceipt > p > span{
+    color: black;
+}

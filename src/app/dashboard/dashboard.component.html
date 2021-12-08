@@ -1,0 +1,181 @@
+<h1>Admin dashboard</h1>
+
+<form action="">
+  <h3>Category Section</h3>
+  <input
+    matInput
+    placeholder="categoryIdentifier"
+    required
+    name="categoryIdentifier"
+    ngModel
+    #categoryIdentifier="ngModel"
+  />
+
+  <input
+    matInput
+    placeholder="categoryName"
+    required
+    name="categoryName"
+    ngModel
+    #categoryName="ngModel"
+  />
+
+  <input
+    matInput
+    placeholder="imageLink"
+    required
+    name="imageLink"
+    ngModel
+    #imageLink="ngModel"
+  />
+
+  <input
+    matInput
+    placeholder="routerLink"
+    required
+    name="routerLink"
+    ngModel
+    #routerLink="ngModel"
+  />
+
+  
+
+  <button mat-raised-button color="primary"
+    (click)="
+      onaddcategory(categoryIdentifier, categoryName, imageLink, routerLink)
+    "
+  >
+    Add Category
+  </button>
+</form>
+
+
+<form action="">
+  <input placeholder="category Identifier" />
+  <button mat-raised-button color="primary">Delete Category</button>
+</form>
+
+
+<form action="">
+  <h3>Grocery Section</h3>
+  <input
+    matInput
+    placeholder="categoryIdentifier"
+    required
+    name="categoryIdentifier1"
+    ngModel
+    #categoryIdentifier1="ngModel"
+  />
+
+  <input
+  matInput
+  placeholder="groceryidentifier"
+  required
+  name="groceryidentifier"
+  ngModel
+  #groceryidentifier="ngModel"
+/>
+
+  <input
+    matInput
+    placeholder="groceryName"
+    required
+    name="groceryName"
+    ngModel
+    #groceryName="ngModel"
+  />
+
+  <input
+    matInput
+    placeholder="imageLink"
+    required
+    name="imageLink1"
+    ngModel
+    #imageLink1="ngModel"
+  />
+
+  <input
+  matInput
+  placeholder="netPrice"
+  required
+  name="netPrice"
+  ngModel
+  #netPrice="ngModel"
+/>
+
+<input
+matInput
+placeholder="offerIdentifier"
+required
+name="offerIdentifier"
+ngModel
+#offerIdentifier="ngModel"
+/>
+
+<input
+matInput
+placeholder="price"
+required
+name="price"
+ngModel
+#price="ngModel"
+/>
+
+<input
+matInput
+placeholder="quantityAvailable"
+required
+name="quantityAvailable"
+ngModel
+#quantityAvailable="ngModel"
+/>
+
+  <button mat-raised-button color="primary"
+    (click)="
+      onaddgrocery(categoryIdentifier1, groceryidentifier, groceryName, imageLink1, netPrice, offerIdentifier, price, quantityAvailable )
+    "
+  >
+    Add Grocery
+  </button>
+</form>
+
+<form action="">
+  <input placeholder="groceryidentifier" />
+  <button mat-raised-button color="primary">Delete grocery</button>
+</form>
+
+
+<form action="">
+  <h3>Offer Section</h3>
+  <input placeholder="offerid"/>
+  <input placeholder="offer name"/>
+  <input placeholder="offer discount"/>
+  <button mat-raised-button color="primary">Add Offer</button>
+</form>
+<form action="">
+  <input placeholder="offeridentifier" />
+  <button mat-raised-button color="primary">get offers</button>
+</form>
+<form action="">
+  <input placeholder="offeridentifier" />
+  <button mat-raised-button color="primary">Delete offers</button>
+</form>
+<form action="">
+  <button mat-raised-button color="primary">Get offers list</button>
+</form>
+
+
+<form action="">
+  <h3>Order section</h3>
+  <input placeholder="Orderidentifier" />
+  <button mat-raised-button color="primary">get Order</button>
+</form>
+<form action="">
+  <input placeholder="Orderidentifier" />
+  <button mat-raised-button color="primary">Delete Order</button>
+</form>
+<form action="">
+  <button mat-raised-button color="primary">Get Order list</button>
+</form>
+
+
